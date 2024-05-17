@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,500&display=swap');
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background color and font styles to the body */
+body {
+    background-color: #f2f2f2;
+    font-family: 'Lora', serif;
+}
+
+/* Add these styles for the navigation bar */
+nav {
+    color: #333;
+    background-color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    border-radius: 15px;
+    opacity: 0.9;
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+    font-family: 'Lora', sans-serif;
+    font-weight: 900;
+}
+
+/* Change link color on hover */
+.navbar a:hover {
+    color: #ff9900;
+}
+
+/* Header styles */
+/* Styles for the header section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #282727;
+    color: rgb(233, 237, 240);
+    padding: 20px;
+}
+
+/* Styles for the header content */
+.header-content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 2rem;
+    color: rgb(233, 237, 240);
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.header-content p {
+    font-size: 1rem;
+    color: rgb(233, 237, 240);
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Lora', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.header-content .contact-button {
+    background-color: #4087f1;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Lora', sans-serif;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.header-content .resume-button {
+    background-color: #4087f1;
+    color: white;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    font-family: 'Lora', sans-serif;
+    font-weight: 700;
+}
+
+/* Styles for the header name/image */
+.header-name img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+/* About section styles */
+#about {
+    background-color: #282727;
+    color: rgb(233, 237, 240);
+    padding: 20px;
+    width: 100%;
+    height: auto;
+}
+
+#about h2 {
+    font-family: 'Lora', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    text-decoration: underline;
+    margin-left: 396px;
+}
+
+.about-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.about-img {
+    width: 300px;
+    margin-right: 20px;
+    flex: 1;
+}
+
+.about-img img {
+    max-width: 100%;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.about-para {
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: center;
+    flex: 2;
+}
+
+.about-para p {
+    padding-top: 56px;
+    text-align: center;
+    font-family: 'Lora', sans-serif;
+    font-style: italic;
+    font-size: large;
+}
+
+/* Skills section styles */
+
+.skills .title{
+    font-family: 'Lora', sans-serif;
+    font-weight: 700;
+    font-size:30px;
+    margin-top: -5px;
+    margin-bottom: 6px;
+    text-align: center;
+    text-decoration: underline;
+  
+}
+    
+
+.skills .my-skill{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.skills{
+    padding: 50px;
+    background-color: #282727;
+    color: rgb(233, 237, 240);
+}
+.skills > .text{
+    
+    text-align: center;
+  font-family: 'Lora', sans-serif;
+  font-style: italic;
+  font-size: large;
+}
+
+.skills .row{
+    margin: 1rem 0;
+}
+
+.skills .item{
+    padding: 0.5rem 0;
+    margin: 0.3rem 0;
+}
+
+.skills .item-text{
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.skills .item-text span:last-child{
+    position: absolute;
+}
+
+.skills .item-text .w-90{
+    margin-left: 85%;
+}
+
+.skills .item-text .w-75{
+    margin-left: 70%;
+}
+
+.skills .item-text .w-85{
+    margin-left: 80%;
+}
+
+.skills .item-text .w-80{
+    margin-left: 75%;
+}
+
+.skills .item-text .w-60{
+    margin-left: 55%;
+}
+
+.skills .item-text .w-68{
+    margin-left: 63%;
+}
+
+.progress {
+    width: 100%;
+    height: 20px; /* Adjust height as needed */
+    background-color:gray;
+    border-radius: 10px;
+    margin: 0.8rem 0;
+    height: 16px;
+
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #3980de; /* Adjust the background color for the progress */
+   border-radius: 10px;
+
+}
+
+.progress-bar.w-90{
+    width: 90%;
+}
+
+.progress-bar.w-75{
+    width: 75%;
+}
+
+.progress-bar.w-85{
+    width: 85%;
+}
+
+.progress-bar.w-80{
+    width: 80%;
+}
+
+.progress-bar.w-60{
+    width: 60%;
+}
+
+.progress-bar.w-68{
+    width: 68%;
+}
+
+.skills .row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:2rem;
+}
+
+/* Add more progress bar width styles as needed */
+
+/* Projects section styles */
+#projects {
+    background-color: #282727;
+    color: rgb(233, 237, 240);
+    padding: 20px;
+    text-align: center;
+}
+
+.projects-content h2 {
+    font-family: 'Lora', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.project {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.project img {
+    max-width: 100%;
+}
+
+.project h3 {
+    font-size: 1.25rem;
+    margin: 10px 0;
+}
+
+.project p {
+    font-size: 1rem;
+    margin: 10px 0;
+    font-family: 'Lora', sans-serif;
+    font-style: italic;
+    font-size: large;
+}
+
+/* Resume section styles */
+#resume {
+    background-color: #282727;
+    color: rgb(233, 237, 240);
+    padding: 20px;
+    text-align: center;
+}
+
+#resume h2 {
+    padding-bottom: 15px;
+    font-family: 'Lora', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.resume-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.resume-content .resume-img {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 20px;
+}
+
+.resume-content .resume-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.resume-download {
+    flex: 1;
+    text-align: center;
+}
+
+.resume-download h1 {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.resume-download p {
+    padding-bottom: 20px;
+    font-family: 'Lora', sans-serif;
+    font-style: italic;
+    font-size: large;
+}
+
+.resume-content h2 {
+    font-size: 1.5rem;
+}
+
+.resume-content a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #206ad1;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-family: 'Lora', sans-serif;
+    font-weight: 700;
+}
+
+/* Contact section styles */
+#contact {
+    background-color: #282727;
+    color: rgb(233, 237, 240);
+    padding: 20px;
+    text-align: center;
+}
+#contact h1{
+    padding-bottom: 15px;
+    font-family: 'Lora', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+.contact-content h2 {
+    font-size: 1.5rem;
+    font-family: 'Lora', sans-serif;
+    font-style: italic;
+    font-size: large;
+    text-decoration: underline;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact-icons img {
+    width: 50px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+}
+
+.contact-img {
+    flex: 1;
+    text-align: center;
+}
+
+.contact-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-content p {
+    font-size: 1rem;
+    margin: 10px 0;
+    font-family: 'Lora', sans-serif;
+    font-style: italic;
+    font-size: large;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: rgb(233, 237, 240);
+    color: #282727;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .header-content p {
+        font-size: 0.8rem;
+    }
+
+    .header-name img {
+        width: 300px;
+        height: 300px;
+    }
+}
